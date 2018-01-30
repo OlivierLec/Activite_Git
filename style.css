@@ -1,0 +1,138 @@
+/* Définition des polices personnalisées */
+
+@font-face{
+	font-family: 'GeosansLight';
+    src: url('GeosansLight.ttf');
+}
+
+
+
+/* Eléments principaux de la page */
+
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+
+	color: rgba(27, 27, 27, 0.8);
+	font-family: Arial, serif;
+	text-align: left;
+	
+	display: flex;
+}
+
+.deco{
+	flex: 1;
+	background: url("images/deco.jpg") repeat;
+}
+
+.bloc_page{
+	flex: 7;
+	background: url("images/bg.jpg") repeat;
+	text-align: center;
+	height: 100%;
+	padding: 40px;
+	overflow: auto;
+}
+
+
+
+/* Header */
+
+header{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+
+
+
+/* Corps */
+
+section{
+	display: flex;
+	text-align: left;
+	justify-content: space-between;
+}
+
+article{
+	width: 32%;
+	height: 100%;
+	margin: 0;
+}
+
+h1{
+	font-family: 'GeosansLight', Arial, serif;
+	color: rgba(15, 59, 98, 1);
+	margin: 0;
+}
+
+h2{
+	border-left: 6px solid rgba(27, 27, 27, 0.8);
+	padding: 0 0 0 15px;
+	background-color: rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+img{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 80px;
+	width: auto;
+	box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+	
+}
+
+img:hover{
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+li{
+	margin-bottom: 15px;
+}
+
+span{
+	font-weight: bold;
+}
+
+
+/* Footer */
+
+footer{
+	bottom: 0px;
+}
+
+.info{
+	text-align: center;
+	margin-top: 50px;
+}
+
+@media all and (max-width: 1024px)
+{
+	.deco{
+		display: none;
+	}
+	
+	section{
+		flex-direction: column;
+	}
+	
+	article{
+		width: 100%;
+	}	
+}
+
+@media all and (max-width: 700px)
+{
+	img{
+		position: relative;
+		margin: auto;
+		margin-bottom: 20px;
+	}
