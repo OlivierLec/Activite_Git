@@ -1,0 +1,4 @@
+exemple :
+*.tmp //Tout se qui fini par temp
+log.txt //Ignore le fichier en question
+tmp/* //Tout le contenu du dossier spécifié
